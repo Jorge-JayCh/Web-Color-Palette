@@ -4,7 +4,7 @@ import Palettes from '../../components/Palette/Palettes';
 import Tags from '../../components/Tag/Tags';
 import Favorites from '../../components/Favorite/Favorites';
 import { getTags } from '../../service';
-import { FavoritesContext } from '../../context/FavoriteContext';
+import { FavoritesContext } from '../../context/FavoritesContext';
 import { FiltersContext } from '../../context/FiltersContext'
 import { ColorPalettesContext } from '../../context/ColorPalettesContext';
 import palettoLogo from '../../assets/logo.png';
@@ -50,9 +50,9 @@ const Home = () => {
   return (
     <FavoritesContext.Provider value={{favorites, setFavorites}}>
       <FiltersContext.Provider value={{filters, setFilters}}>
-        <header>
+        {/* <header>
           <img src={palettoLogo} alt="Logo" className='logo' />
-        </header>
+        </header> */}
         <div className='main-container'>
           <Tags tags={tags}/>
           <Palettes palettes={colorPaletteWithLikes} />
