@@ -1,0 +1,13 @@
+header {
+    padding: 58px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+  }
