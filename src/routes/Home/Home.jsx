@@ -50,9 +50,9 @@ const Home = () => {
   return (
     <FavoritesContext.Provider value={{favorites, setFavorites}}>
       <FiltersContext.Provider value={{filters, setFilters}}>
-        <header>
+        {/* <header>
           <img src={palettoLogo} alt="Logo" className='logo' />
-        </header>
+        </header> */}
         <div className='main-container'>
           <Tags tags={tags}/>
           <Palettes palettes={colorPaletteWithLikes} />
